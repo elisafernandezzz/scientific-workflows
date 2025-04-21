@@ -1,0 +1,1232 @@
+
+            "files": [
+                {
+                    "id": "large.fasta.0",
+                    "sizeInBytes": 2012
+                },
+                {
+                    "id": "large.fasta.1",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.2",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.3",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.4",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.5",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.6",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.7",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.8",
+                    "sizeInBytes": 2013
+                },
+                {
+                    "id": "large.fasta.9",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.10",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.11",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.12",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.13",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.14",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.15",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.16",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.17",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.18",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.19",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.20",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.21",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.22",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.23",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.24",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.25",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.26",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.27",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.28",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.29",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.30",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.31",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.32",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.33",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.34",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.35",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.36",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.37",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.38",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.39",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.40",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.41",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.42",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.43",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.44",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.45",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.46",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.47",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.48",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.49",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.50",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.51",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.52",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.53",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.54",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.55",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.56",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.57",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.58",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.59",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.60",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.61",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.62",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.63",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.64",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.65",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.66",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.67",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.68",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.69",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.70",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.71",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.72",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.73",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.74",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.75",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.76",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.77",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.78",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.79",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.80",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.81",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.82",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.83",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.84",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.85",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.86",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.87",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.88",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.89",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.90",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.91",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.92",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.93",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.94",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.95",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.96",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.97",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.98",
+                    "sizeInBytes": 2014
+                },
+                {
+                    "id": "large.fasta.99",
+                    "sizeInBytes": 2015
+                },
+                {
+                    "id": "large.fasta",
+                    "sizeInBytes": 201389
+                },
+                {
+                    "id": "split_fasta",
+                    "sizeInBytes": 1
+                },
+                {
+                    "id": "large.fasta.0.out",
+                    "sizeInBytes": 6758
+                },
+                {
+                    "id": "large.fasta.0.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "blastall",
+                    "sizeInBytes": 7688
+                },
+                {
+                    "id": "nt",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.1.out",
+                    "sizeInBytes": 6200
+                },
+                {
+                    "id": "large.fasta.1.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.2.out",
+                    "sizeInBytes": 6065
+                },
+                {
+                    "id": "large.fasta.2.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.3.out",
+                    "sizeInBytes": 5690
+                },
+                {
+                    "id": "large.fasta.3.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.4.out",
+                    "sizeInBytes": 6179
+                },
+                {
+                    "id": "large.fasta.4.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.5.out",
+                    "sizeInBytes": 5635
+                },
+                {
+                    "id": "large.fasta.5.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.6.out",
+                    "sizeInBytes": 5558
+                },
+                {
+                    "id": "large.fasta.6.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.7.out",
+                    "sizeInBytes": 5501
+                },
+                {
+                    "id": "large.fasta.7.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.8.out",
+                    "sizeInBytes": 5593
+                },
+                {
+                    "id": "large.fasta.8.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.9.out",
+                    "sizeInBytes": 6404
+                },
+                {
+                    "id": "large.fasta.9.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.10.out",
+                    "sizeInBytes": 5727
+                },
+                {
+                    "id": "large.fasta.10.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.11.out",
+                    "sizeInBytes": 5753
+                },
+                {
+                    "id": "large.fasta.11.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.12.out",
+                    "sizeInBytes": 5956
+                },
+                {
+                    "id": "large.fasta.12.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.13.out",
+                    "sizeInBytes": 5762
+                },
+                {
+                    "id": "large.fasta.13.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.14.out",
+                    "sizeInBytes": 5843
+                },
+                {
+                    "id": "large.fasta.14.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.15.out",
+                    "sizeInBytes": 5996
+                },
+                {
+                    "id": "large.fasta.15.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.16.out",
+                    "sizeInBytes": 6105
+                },
+                {
+                    "id": "large.fasta.16.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.17.out",
+                    "sizeInBytes": 5879
+                },
+                {
+                    "id": "large.fasta.17.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.18.out",
+                    "sizeInBytes": 5266
+                },
+                {
+                    "id": "large.fasta.18.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.19.out",
+                    "sizeInBytes": 5402
+                },
+                {
+                    "id": "large.fasta.19.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.20.out",
+                    "sizeInBytes": 6607
+                },
+                {
+                    "id": "large.fasta.20.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.21.out",
+                    "sizeInBytes": 5732
+                },
+                {
+                    "id": "large.fasta.21.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.22.out",
+                    "sizeInBytes": 5935
+                },
+                {
+                    "id": "large.fasta.22.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.23.out",
+                    "sizeInBytes": 6549
+                },
+                {
+                    "id": "large.fasta.23.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.24.out",
+                    "sizeInBytes": 6049
+                },
+                {
+                    "id": "large.fasta.24.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.25.out",
+                    "sizeInBytes": 5444
+                },
+                {
+                    "id": "large.fasta.25.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.26.out",
+                    "sizeInBytes": 5531
+                },
+                {
+                    "id": "large.fasta.26.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.27.out",
+                    "sizeInBytes": 5336
+                },
+                {
+                    "id": "large.fasta.27.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.28.out",
+                    "sizeInBytes": 5653
+                },
+                {
+                    "id": "large.fasta.28.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.29.out",
+                    "sizeInBytes": 5974
+                },
+                {
+                    "id": "large.fasta.29.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.30.out",
+                    "sizeInBytes": 5757
+                },
+                {
+                    "id": "large.fasta.30.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.31.out",
+                    "sizeInBytes": 6083
+                },
+                {
+                    "id": "large.fasta.31.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.32.out",
+                    "sizeInBytes": 5916
+                },
+                {
+                    "id": "large.fasta.32.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.33.out",
+                    "sizeInBytes": 6179
+                },
+                {
+                    "id": "large.fasta.33.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.34.out",
+                    "sizeInBytes": 6224
+                },
+                {
+                    "id": "large.fasta.34.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.35.out",
+                    "sizeInBytes": 6309
+                },
+                {
+                    "id": "large.fasta.35.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.36.out",
+                    "sizeInBytes": 5382
+                },
+                {
+                    "id": "large.fasta.36.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.37.out",
+                    "sizeInBytes": 6456
+                },
+                {
+                    "id": "large.fasta.37.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.38.out",
+                    "sizeInBytes": 6614
+                },
+                {
+                    "id": "large.fasta.38.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.39.out",
+                    "sizeInBytes": 5887
+                },
+                {
+                    "id": "large.fasta.39.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.40.out",
+                    "sizeInBytes": 6056
+                },
+                {
+                    "id": "large.fasta.40.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.41.out",
+                    "sizeInBytes": 5857
+                },
+                {
+                    "id": "large.fasta.41.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.42.out",
+                    "sizeInBytes": 5900
+                },
+                {
+                    "id": "large.fasta.42.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.43.out",
+                    "sizeInBytes": 6290
+                },
+                {
+                    "id": "large.fasta.43.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.44.out",
+                    "sizeInBytes": 5603
+                },
+                {
+                    "id": "large.fasta.44.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.45.out",
+                    "sizeInBytes": 5841
+                },
+                {
+                    "id": "large.fasta.45.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.46.out",
+                    "sizeInBytes": 5387
+                },
+                {
+                    "id": "large.fasta.46.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.47.out",
+                    "sizeInBytes": 5488
+                },
+                {
+                    "id": "large.fasta.47.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.48.out",
+                    "sizeInBytes": 6615
+                },
+                {
+                    "id": "large.fasta.48.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.49.out",
+                    "sizeInBytes": 6004
+                },
+                {
+                    "id": "large.fasta.49.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.50.out",
+                    "sizeInBytes": 6122
+                },
+                {
+                    "id": "large.fasta.50.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.51.out",
+                    "sizeInBytes": 5583
+                },
+                {
+                    "id": "large.fasta.51.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.52.out",
+                    "sizeInBytes": 6092
+                },
+                {
+                    "id": "large.fasta.52.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.53.out",
+                    "sizeInBytes": 5639
+                },
+                {
+                    "id": "large.fasta.53.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.54.out",
+                    "sizeInBytes": 5340
+                },
+                {
+                    "id": "large.fasta.54.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.55.out",
+                    "sizeInBytes": 5960
+                },
+                {
+                    "id": "large.fasta.55.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.56.out",
+                    "sizeInBytes": 6049
+                },
+                {
+                    "id": "large.fasta.56.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.57.out",
+                    "sizeInBytes": 6172
+                },
+                {
+                    "id": "large.fasta.57.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.58.out",
+                    "sizeInBytes": 5426
+                },
+                {
+                    "id": "large.fasta.58.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.59.out",
+                    "sizeInBytes": 5644
+                },
+                {
+                    "id": "large.fasta.59.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.60.out",
+                    "sizeInBytes": 5768
+                },
+                {
+                    "id": "large.fasta.60.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.61.out",
+                    "sizeInBytes": 5956
+                },
+                {
+                    "id": "large.fasta.61.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.62.out",
+                    "sizeInBytes": 5925
+                },
+                {
+                    "id": "large.fasta.62.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.63.out",
+                    "sizeInBytes": 6020
+                },
+                {
+                    "id": "large.fasta.63.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.64.out",
+                    "sizeInBytes": 6172
+                },
+                {
+                    "id": "large.fasta.64.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.65.out",
+                    "sizeInBytes": 5506
+                },
+                {
+                    "id": "large.fasta.65.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.66.out",
+                    "sizeInBytes": 6073
+                },
+                {
+                    "id": "large.fasta.66.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.67.out",
+                    "sizeInBytes": 5367
+                },
+                {
+                    "id": "large.fasta.67.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.68.out",
+                    "sizeInBytes": 5732
+                },
+                {
+                    "id": "large.fasta.68.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.69.out",
+                    "sizeInBytes": 5209
+                },
+                {
+                    "id": "large.fasta.69.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.70.out",
+                    "sizeInBytes": 6645
+                },
+                {
+                    "id": "large.fasta.70.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.71.out",
+                    "sizeInBytes": 6009
+                },
+                {
+                    "id": "large.fasta.71.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.72.out",
+                    "sizeInBytes": 5580
+                },
+                {
+                    "id": "large.fasta.72.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.73.out",
+                    "sizeInBytes": 6021
+                },
+                {
+                    "id": "large.fasta.73.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.74.out",
+                    "sizeInBytes": 5734
+                },
+                {
+                    "id": "large.fasta.74.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.75.out",
+                    "sizeInBytes": 6044
+                },
+                {
+                    "id": "large.fasta.75.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.76.out",
+                    "sizeInBytes": 6316
+                },
+                {
+                    "id": "large.fasta.76.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.77.out",
+                    "sizeInBytes": 6320
+                },
+                {
+                    "id": "large.fasta.77.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.78.out",
+                    "sizeInBytes": 5742
+                },
+                {
+                    "id": "large.fasta.78.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.79.out",
+                    "sizeInBytes": 6303
+                },
+                {
+                    "id": "large.fasta.79.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.80.out",
+                    "sizeInBytes": 5623
+                },
+                {
+                    "id": "large.fasta.80.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.81.out",
+                    "sizeInBytes": 5595
+                },
+                {
+                    "id": "large.fasta.81.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.82.out",
+                    "sizeInBytes": 5829
+                },
+                {
+                    "id": "large.fasta.82.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.83.out",
+                    "sizeInBytes": 6320
+                },
+                {
+                    "id": "large.fasta.83.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.84.out",
+                    "sizeInBytes": 5076
+                },
+                {
+                    "id": "large.fasta.84.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.85.out",
+                    "sizeInBytes": 5629
+                },
+                {
+                    "id": "large.fasta.85.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.86.out",
+                    "sizeInBytes": 5752
+                },
+                {
+                    "id": "large.fasta.86.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.87.out",
+                    "sizeInBytes": 5955
+                },
+                {
+                    "id": "large.fasta.87.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.88.out",
+                    "sizeInBytes": 6301
+                },
+                {
+                    "id": "large.fasta.88.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.89.out",
+                    "sizeInBytes": 5951
+                },
+                {
+                    "id": "large.fasta.89.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.90.out",
+                    "sizeInBytes": 6126
+                },
+                {
+                    "id": "large.fasta.90.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.91.out",
+                    "sizeInBytes": 5396
+                },
+                {
+                    "id": "large.fasta.91.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.92.out",
+                    "sizeInBytes": 5813
+                },
+                {
+                    "id": "large.fasta.92.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.93.out",
+                    "sizeInBytes": 5910
+                },
+                {
+                    "id": "large.fasta.93.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.94.out",
+                    "sizeInBytes": 6099
+                },
+                {
+                    "id": "large.fasta.94.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.95.out",
+                    "sizeInBytes": 6360
+                },
+                {
+                    "id": "large.fasta.95.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.96.out",
+                    "sizeInBytes": 5800
+                },
+                {
+                    "id": "large.fasta.96.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.97.out",
+                    "sizeInBytes": 6147
+                },
+                {
+                    "id": "large.fasta.97.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.98.out",
+                    "sizeInBytes": 5596
+                },
+                {
+                    "id": "large.fasta.98.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "large.fasta.99.out",
+                    "sizeInBytes": 5776
+                },
+                {
+                    "id": "large.fasta.99.err",
+                    "sizeInBytes": 0
+                },
+                {
+                    "id": "None",
+                    "sizeInBytes": 560294
+                },
+                {
+                    "id": "cat_blast",
+                    "sizeInBytes": 1
+                },
+                {
+                    "id": "None.err",
+                    "sizeInBytes": 0
+                }
+            ]
+        },
