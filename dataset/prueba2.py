@@ -47,6 +47,17 @@ def build_file_size_lookup(data):
     file_size_lookup = {}
 
     files = data.get("workflow", {}).get("specification", {}).get("files", [])
+    # Add inside `build_file_size_lookup()`, after parsing `files`:
+    outputs = data.get("workflow", {}).get("execution", {}).get("tasks", [])
+    for task in outputs:
+        for output in task.get("outputs", []):
+            if isinstance(output, dict):
+                key = output.get("id") or output.get("name")
+                size = output.get("sizeInBytes") or output.get("size")
+                if key and size:
+                    file_size_lookup[os.path.basename(key)] = size
+                    file_size_lookup[key] = size
+
     for f in files:
         if isinstance(f, dict):
             key = f.get("id") or f.get("name")
@@ -79,10 +90,15 @@ def extract_task_info(filepath):
     workflow_name = data.get("name", os.path.basename(filepath))
     tasks = data.get("workflow", {}).get("specification", {}).get("tasks", [])
     file_sizes = build_file_size_lookup(data)
+    print(f"📦 File size keys from JSON: {list(file_sizes.keys())[:10]}...")
+
 
     rows = []
     for task in tasks:
         task_name = task.get("name")
+        if 'blastall' in task_name or 'cat' in task_name:
+            print(f"🔍 Task {task_name} input files: {task.get('inputFiles', [])}")
+
         task_category = clean_and_map_task_type(task_name)
         children = task.get("children", [])
         if not isinstance(children, list):
@@ -92,19 +108,27 @@ def extract_task_info(filepath):
         input_files = task.get("inputFiles", [])
         output_files = task.get("outputFiles", [])
 
+        input_files = [f for f in input_files if f and f.lower() != 'none']
+        output_files = [f for f in output_files if f and f.lower() != 'none']
+
+
         seen_input = set()
-        input_size = sum(
-            get_file_size(f, file_sizes)
-            for f in input_files
-            if f and f.lower() != "none" and os.path.basename(f) not in seen_input and not seen_input.add(os.path.basename(f))
-        )
+        input_size = 0
+        for f in input_files:
+            base = os.path.basename(f)
+            if f and f.lower() != "none" and base not in seen_input:
+                seen_input.add(base)
+                input_size += get_file_size(f, file_sizes)
+
 
         seen_output = set()
-        output_size = sum(
-            get_file_size(f, file_sizes)
-            for f in output_files
-            if f and f.lower() != "none" and os.path.basename(f) not in seen_output and not seen_output.add(os.path.basename(f))
-        )
+        output_size = 0
+        for f in output_files:
+            base = os.path.basename(f)
+            if f and f.lower() != "none" and base not in seen_output:
+                seen_output.add(base)
+                output_size += get_file_size(f, file_sizes)
+
 
         row = {
             "workflow_name": workflow_name,
@@ -156,21 +180,27 @@ else:
     simplified_df.to_csv("task_level_dataset.csv", index=False)
 
     # Aggregation
+        # Aggregation with children average and correct labeling
     grouped = []
     for (workflow, category), group in task_level_df.groupby(['workflow_name', 'task_category']):
         instance_count = len(group)
+        children_total = group['children_count'].sum()
+        children_avg = group['children_count'].mean()
+
         row = {
             "workflow_name": workflow,
             "task_category": category,
-            "task_name": group['task_name'].iloc[0],
+            "task_name": category,  # Better label for logical task groups
             "instance_count": instance_count,
-            "children_count": group['children_count'].sum(),
+            "children_count": children_total,
+            "avg_children_count": children_avg,  # Added average for clarity
             "input_file_count": group['input_file_count'].sum(),
             "total_input_file_sizes": group['total_input_file_sizes'].sum(),
             "output_file_count": group['output_file_count'].sum(),
             "total_output_file_sizes": group['total_output_file_sizes'].sum()
         }
         grouped.append(row)
+
 
     logical_tasks = pd.DataFrame(grouped)
     logical_tasks.to_csv("logical_task_dataset.csv", index=False)
