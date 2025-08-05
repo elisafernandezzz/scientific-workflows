@@ -7,18 +7,27 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 from copy import deepcopy
 
 # Load dataset
-df = pd.read_csv(r'C:\Users\elisa\Desktop\4 ING INF ELISA\BACHELOR THESIS\GIT\scientific-workflows\logical_task_dataset.csv')
+df = pd.read_csv(r'C:\Users\elisa\Desktop\4 ING INF ELISA\BACHELOR THESIS\GIT\logical_task_dataset_test.csv')
+
 # Encode categorical features
 for col in ['workflow_name', 'task_category', 'task_name']:
     le = LabelEncoder()
     df[col] = le.fit_transform(df[col])
 
+# Add log-transformed size features
+df['log_input_size'] = np.log1p(df['total_input_file_sizes'])
+df['log_output_size'] = np.log1p(df['total_output_file_sizes'])
+
+df['task_category'] = LabelEncoder().fit_transform(df['task_category'])
+
+# Prepare features and target
 X_raw = df.drop(columns=['instance_count'])
 y_raw = df['instance_count'].values
 
 # Normalize numerical features
 scaler = StandardScaler()
 X = scaler.fit_transform(X_raw)
+
 
 # Group rows by task_name
 task_names = df['task_name'].values
