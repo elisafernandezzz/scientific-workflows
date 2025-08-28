@@ -16,7 +16,7 @@ phyton dataset/task_extraction.py
 
 ### Run machine learning models
 ```python
-python mlModels/(linearRegression.py, randomForest.py, XGBosst.py)
+python mlModels/(linearRegression.py, randomForestRegressor.py, xgboost_model.py, reptileTaskModel.py)
 ```
 
 ### Outputs (in \results)
@@ -33,3 +33,5 @@ python mlModels/(linearRegression.py, randomForest.py, XGBosst.py)
 * Scripts are anchored so outputs go to scientific-workflows/results.
 
 * Large CSVs may not preview on GitHub. Consider Git LFS for files approaching 100 MB.
+
+* reptileLearningTask.py is the task/episode wrapper and reptileLearningTask.py is the model architecture.
