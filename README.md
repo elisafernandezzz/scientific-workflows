@@ -20,13 +20,13 @@ python mlModels/(linearRegression.py, randomForest.py, XGBosst.py)
 ```
 
 ### Outputs (in \results)
-* task_level_dataset_detailed_test.csv — Per physical task (with debug columns)
+* **task_level_dataset_detailed_test.csv** — Per physical task (with debug columns)
 
-* task_level_dataset_test.csv — Simplified task-level dataset
+* **task_level_dataset_test.csv** — Simplified task-level dataset
 
-* logical_task_dataset_test.csv — Per logical task aggregation
+* **logical_task_dataset_test.csv** — Per logical task aggregation
 
-* workflow_types_summary.csv, workflow_task_details.csv — Summaries of the structure of WfCommons.
+* **workflow_types_summary.csv**, workflow_task_details.csv — Summaries of the structure of WfCommons.
 
 ## Notes
 
