@@ -3,6 +3,7 @@ import json
 import pandas as pd
 from collections import defaultdict
 import re
+from pathlib import Path
 
 def extract_workflow_type(workflow_name):
     """Extract workflow type from workflow name"""
@@ -181,13 +182,24 @@ def create_workflow_task_table(base_dir):
     return summary_df, detailed_df
 
 # Run the analysis
-BASE_DIR = "./scientific-workflows/WfInstances"
+BASE_DIR = Path("./scientific-workflows/WfInstances").resolve()
 summary_table, detailed_table = create_workflow_task_table(BASE_DIR)
+
+# --- where to save ---
+PROJECT_ROOT = BASE_DIR.parent                 # .../scientific-workflows
+RESULTS_DIR  = PROJECT_ROOT / "results"        # .../scientific-workflows/results
+RESULTS_DIR.mkdir(parents=True, exist_ok=True) # create if missing
+
+# Save to results/
+summary_path  = RESULTS_DIR / "workflow_types_summary.csv"
+detailed_path = RESULTS_DIR / "workflow_task_details.csv"
 
 print("\n📊 WORKFLOW TYPES AND LOGICAL TASKS SUMMARY:")
 print("="*80)
 print(summary_table.to_string(index=False, max_colwidth=50))
 
-print(f"\n💾 Saving tables to CSV files...")
-summary_table.to_csv("workflow_types_summary.csv", index=False)
-detailed_table.to_csv("workflow_task_details.csv", index=False)
+print("\n💾 Saving tables to CSV files...")
+summary_table.to_csv(summary_path, index=False)
+detailed_table.to_csv(detailed_path, index=False)
+print(f"✔ Saved: {summary_path}")
+print(f"✔ Saved: {detailed_path}")

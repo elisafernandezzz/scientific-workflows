@@ -3,8 +3,9 @@ import json
 import pandas as pd
 import re
 from collections import defaultdict
+from pathlib import Path
 
-BASE_DIR = "./scientific-workflows/WfInstances"
+BASE_DIR = Path("./scientific-workflows/WfInstances").resolve()
 print(f"Scanning in: {BASE_DIR}")
 
 main_task_mapping = {
@@ -443,12 +444,9 @@ else:
     tasks_with_input_sizes = (task_level_df['input_sizes_found'] > 0).sum()
     tasks_with_output_sizes = (task_level_df['output_sizes_found'] > 0).sum()
     
-    # Save detailed version with debug info
-    task_level_df.to_csv("task_level_dataset_detailed_test.csv", index=False)
     
     # Save simplified version without debug columns
     simplified_df = task_level_df.drop(columns=["input_files", "output_files", "input_sizes_found", "output_sizes_found"], errors='ignore')
-    simplified_df.to_csv("task_level_dataset_test.csv", index=False)
 
     # Aggregation with enhanced statistics using logical children
     grouped = []
@@ -476,9 +474,20 @@ else:
         grouped.append(row)
 
     logical_tasks = pd.DataFrame(grouped)
-    logical_tasks.to_csv("logical_task_dataset_test.csv", index=False)
 
-    print(f"\nSaved task-level dataset with {len(task_level_df)} tasks to task_level_dataset.csv")
-    print(f"Saved detailed task-level dataset to task_level_dataset_detailed.csv")
-    print(f"Saved logical task aggregation with {len(logical_tasks)} entries to logical_task_dataset.csv")
-    
+PROJECT_ROOT = BASE_DIR.parent
+RESULTS_DIR  = PROJECT_ROOT / "results"
+RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+
+detailed_path   = RESULTS_DIR / "task_level_dataset_detailed_test.csv"
+simplified_path = RESULTS_DIR / "task_level_dataset_test.csv"
+logical_path    = RESULTS_DIR / "logical_task_dataset_test.csv"
+
+# save + prints
+task_level_df.to_csv(detailed_path, index=False)
+simplified_df.to_csv(simplified_path, index=False)
+logical_tasks.to_csv(logical_path, index=False)
+
+print(f"\nSaved detailed task-level dataset with {len(task_level_df)} rows to {detailed_path}")
+print(f"Saved simplified task-level dataset to {simplified_path}")
+print(f"Saved logical task aggregation with {len(logical_tasks)} rows to {logical_path}")
