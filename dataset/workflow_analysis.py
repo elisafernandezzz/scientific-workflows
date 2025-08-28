@@ -10,6 +10,10 @@ def extract_workflow_type(workflow_name):
     name_lower = workflow_name.lower()
     
     # Direct matches
+    if 'scrnaseq' in name_lower:
+        return 'scrnaseq'
+    elif 'smrnaseq' in name_lower:
+        return 'smrnaseq'
     if 'blast' in name_lower:
         return 'blast'
     elif 'montage' in name_lower:
@@ -26,8 +30,10 @@ def extract_workflow_type(workflow_name):
         return 'seismology'
     elif '1000genome' in name_lower:
         return '1000genome'
-    elif 'genome' in name_lower:
+    elif name_lower.startswith('genome-dax') or 'epigenomics' in name_lower:
         return 'epigenomics'
+    elif name_lower == 'genome' or name_lower.startswith('genome-'):
+        return 'genome'
     elif 'rnaseq' in name_lower:
         return 'rnaseq'
     elif 'helloworld' in name_lower:
@@ -185,22 +191,3 @@ print(summary_table.to_string(index=False, max_colwidth=50))
 print(f"\n💾 Saving tables to CSV files...")
 summary_table.to_csv("workflow_types_summary.csv", index=False)
 detailed_table.to_csv("workflow_task_details.csv", index=False)
-
-print(f"\n📋 DETAILED BREAKDOWN (First 20 rows):")
-print("="*60)
-print(detailed_table.head(20).to_string(index=False))
-
-print(f"\n📊 WORKFLOW TYPE STATISTICS:")
-print(f"Total workflow types found: {len(summary_table)}")
-print(f"Total workflows analyzed: {summary_table['workflow_count'].sum()}")
-print(f"Total unique task types: {summary_table['unique_task_types'].sum()}")
-
-print(f"\n🔝 TOP 10 WORKFLOW TYPES BY COUNT:")
-top_workflows = summary_table.head(10)[['workflow_type', 'workflow_count', 'unique_task_types']]
-for _, row in top_workflows.iterrows():
-    print(f"  {row['workflow_type']}: {row['workflow_count']} workflows, {row['unique_task_types']} task types")
-
-print(f"\n🔝 WORKFLOW TYPES WITH MOST TASK DIVERSITY:")
-most_diverse = summary_table.nlargest(10, 'unique_task_types')[['workflow_type', 'unique_task_types', 'workflow_count']]
-for _, row in most_diverse.iterrows():
-    print(f"  {row['workflow_type']}: {row['unique_task_types']} task types ({row['workflow_count']} workflows)")

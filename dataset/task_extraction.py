@@ -50,7 +50,7 @@ def extract_logical_dependencies(data):
     
     print(f"Building logical dependency graph...")
     
-    # Method 1: Use the children/parents fields (direct logical dependencies)
+    # Use the children/parents fields (direct logical dependencies)
     spec_children = defaultdict(set)
     spec_dependencies = defaultdict(set)
     
@@ -84,7 +84,7 @@ def extract_logical_dependencies(data):
     for logical_name, tasks in list(logical_task_groups.items())[:5]:
         print(f"   {logical_name}: {len(tasks)} instances")
     
-    # Method 2: Also build file-based dependencies as backup/validation
+    # Also build file-based dependencies as backup/validation
     file_children = defaultdict(set)
     file_dependencies = defaultdict(set)
     
@@ -320,13 +320,13 @@ def extract_task_info(filepath):
         logical_task_name = extract_logical_task_name(task_name)
         task_category = clean_and_map_task_type(task_name)
         
-        # OLD: Physical children from specification
+        # Physical children from specification
         physical_children = task.get("children", [])
         if not isinstance(physical_children, list):
             print(f"Task {task_name} has malformed children: {physical_children}")
             physical_children = []
 
-        # NEW: Logical children count based on logical task name
+        # Logical children count based on logical task name
         logical_children_count = len(logical_children.get(logical_task_name, set()))
         logical_dependencies_count = len(logical_dependencies.get(logical_task_name, set()))
         
@@ -443,29 +443,6 @@ else:
     tasks_with_input_sizes = (task_level_df['input_sizes_found'] > 0).sum()
     tasks_with_output_sizes = (task_level_df['output_sizes_found'] > 0).sum()
     
-    print(f"\nSUMMARY STATISTICS:")
-    print(f"Total tasks: {total_tasks}")
-    print(f"Tasks with input file sizes: {tasks_with_input_sizes} ({tasks_with_input_sizes/total_tasks*100:.1f}%)")
-    print(f"Tasks with output file sizes: {tasks_with_output_sizes} ({tasks_with_output_sizes/total_tasks*100:.1f}%)")
-    print(f"Total input file size: {task_level_df['total_input_file_sizes'].sum():,} bytes")
-    print(f"Total output file size: {task_level_df['total_output_file_sizes'].sum():,} bytes")
-    
-    # NEW: Logical dependency statistics
-    print(f"\nLOGICAL DEPENDENCY STATISTICS:")
-    print(f"Average logical children per task: {task_level_df['logical_children_count'].mean():.2f}")
-    print(f"Average logical dependencies per task: {task_level_df['logical_dependencies_count'].mean():.2f}")
-    print(f"Max logical children: {task_level_df['logical_children_count'].max()}")
-    print(f"Max logical dependencies: {task_level_df['logical_dependencies_count'].max()}")
-    
-    # Compare logical vs physical
-    print(f"\nLOGICAL vs PHYSICAL COMPARISON:")
-    logical_vs_physical = task_level_df[['task_name', 'logical_children_count', 'physical_children_count']].copy()
-    mismatches = logical_vs_physical[logical_vs_physical['logical_children_count'] != logical_vs_physical['physical_children_count']]
-    print(f"Tasks with differing logical vs physical children: {len(mismatches)}")
-    if len(mismatches) > 0:
-        print("Sample mismatches:")
-        print(mismatches.head())
-    
     # Save detailed version with debug info
     task_level_df.to_csv("task_level_dataset_detailed_test.csv", index=False)
     
@@ -505,24 +482,3 @@ else:
     print(f"Saved detailed task-level dataset to task_level_dataset_detailed.csv")
     print(f"Saved logical task aggregation with {len(logical_tasks)} entries to logical_task_dataset.csv")
     
-    # Show sample of tasks with most logical children for verification
-    print(f"\nTOP 5 LOGICAL TASKS BY CHILDREN:")
-    logical_summary = task_level_df.groupby('logical_task_name').agg({
-        'logical_children_count': 'first',
-        'logical_dependencies_count': 'first',
-        'instance_count': 'sum'
-    }).reset_index()
-    
-    top_children = logical_summary.nlargest(5, 'logical_children_count')
-    for _, row in top_children.iterrows():
-        print(f"   {row['logical_task_name']}: {row['logical_children_count']} children, {row['logical_dependencies_count']} dependencies, {row['instance_count']} instances")
-    
-    print(f"\nTOP 5 TASKS BY INPUT SIZE:")
-    top_input = task_level_df.nlargest(5, 'total_input_file_sizes')[['task_name', 'total_input_file_sizes', 'input_file_count']]
-    for _, row in top_input.iterrows():
-        print(f"   {row['task_name']}: {row['total_input_file_sizes']:,} bytes ({row['input_file_count']} files)")
-    
-    print(f"\nTOP 5 TASKS BY OUTPUT SIZE:")
-    top_output = task_level_df.nlargest(5, 'total_output_file_sizes')[['task_name', 'total_output_file_sizes', 'output_file_count']]
-    for _, row in top_output.iterrows():
-        print(f"   {row['task_name']}: {row['total_output_file_sizes']:,} bytes ({row['output_file_count']} files)")
