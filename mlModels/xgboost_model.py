@@ -9,7 +9,7 @@ from xgboost import XGBRegressor
 from sklearn.preprocessing import MultiLabelBinarizer
 
 # Load and clean - using physical task dataset
-df = pd.read_csv(r'C:\Users\elisa\Desktop\4 ING INF ELISA\BACHELOR THESIS\GIT\task_level_dataset_test.csv')
+df = pd.read_csv(r'C:\Users\elisa\Desktop\4 ING INF ELISA\BACHELOR THESIS\GIT\scientific-workflows\results\task_level_dataset_test.csv')
 df = df.dropna()
 
 # Encode categorical features
